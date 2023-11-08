@@ -1,0 +1,66 @@
+.Donation {
+  display: flex;
+  width: 1280px;
+  background: var(--color-light-l, #f6f6f6);
+}
+.Donation_container {
+  width: 1200px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.donation_text {
+  padding-left: 30px;
+}
+h3 {
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #545454;
+}
+h5 {
+  color: var(--color-dark-l, #545454);
+  font-family: Georgia;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.9px;
+}
+.bank_number {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 2px solid #f1cdb3;
+  border-radius: 9px;
+  background-color: #f1cdb3;
+  width: 349px;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 15px;
+}
+.number {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #545454;
+}
+.bank_text {
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--color-dark-m, #b2b2b2);
+}

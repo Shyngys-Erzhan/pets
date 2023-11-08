@@ -1,0 +1,99 @@
+.footer {
+  width: 1280px;
+  background-image: url(../images/footer_background.png);
+}
+.footer_container {
+  width: 1200px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.footer_contacts {
+  padding-top: 16px;
+}
+.footer_contacts_text {
+  color: var(--color-light-xl, #fff);
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 2.1px;
+  margin-top: 10px;
+}
+.content_email {
+  display: flex;
+  align-items: center;
+}
+.footer_contacts_email {
+  color: var(--color-primary, #f1cdb3);
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 1.2px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.contact_number {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.footer_contact_number {
+  color: var(--color-primary, #f1cdb3);
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 1.2px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.footer_location {
+  padding-top: 16px;
+}
+.footer_location_text {
+  color: var(--color-light-xl, #fff);
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 2.1px;
+  margin-top: 10px;
+}
+.location1 {
+  display: flex;
+  align-items: center;
+}
+.footer_location1 {
+  color: var(--color-primary, #f1cdb3);
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 1.2px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.location2 {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.footer_location2 {
+  color: var(--color-primary, #f1cdb3);
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 1.2px;
+  padding-left: 20px;
+  text-decoration: none;
+}

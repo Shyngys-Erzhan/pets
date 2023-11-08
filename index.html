@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pets</title>
+    <link rel="stylesheet" href="./CSS/startscreen.css" />
+    <link rel="stylesheet" href="./CSS/about.css" />
+    <link rel="stylesheet" href="./CSS/pets.css" />
+    <link rel="stylesheet" href="./CSS/help.css" />
+    <link rel="stylesheet" href="./CSS/donation.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/modal_window.css" />
+    <link rel="stylesheet" href=".//styles.css" />
+  </head>
+  <body>
+    <div class="main_bg">
+      <div class="main">
+        <div class="main_logo">
+          <h1 class="main_h1">Cozy House</h1>
+          <p class="main_p">Shelter for pets in Boston</p>
+        </div>
+        <div class="main_nav_menu">
+          <a class="main_nav-items_1" href="#">About the shelter</a>
+          <a class="main_nav-items" href="#">Our pets</a>
+          <a class="main_nav-items" href="#">Help the shelter</a>
+          <a class="main_nav-items" href="#">Contacts</a>
+        </div>
+      </div>
+      <div class="start_screen">
+        <div class="start_content">
+          <p class="content_text_1">
+            Not only people<br />
+            need a house
+          </p>
+          <p class="content_text_2">
+            We offer to give a chance to a little and nice puppy with an
+            extremely<br />
+            wide and open heart. He or she will love you more than anybody
+            else<br />
+            in the world, you will see!
+          </p>
+          <a class="content_button" href="#">Make a friend</a>
+        </div>
+        <img src="./images/pet_dog.png" alt="dog" />
+      </div>
+    </div>
+    <div class="about">
+      <div class="about_container">
+        <div class="about_img">
+          <img src="./images/about-pets.png" alt="about_pets" />
+        </div>
+        <div class="about_content">
+          <p class="about_content_text_1">
+            About the shelter<br />
+            “Cozy House”
+          </p>
+          <p class="about_content_text_2">
+            Currently we have 121 dogs and 342 cats on our hands and<br />
+            statistics show that only 20% of them will find a family. The<br />
+            others will continue to live with us and will be waiting for a
+            lucky<br />
+            chance to become dearly loved.
+          </p>
+          <p class="about_content_text_3">
+            We feed our wards with the best food and make sure that they<br />
+            do not get sick, feel comfortable (including psychologically) and<br />
+            well. We are supported by 87 volunteers and 28 employees of<br />
+            various skill levels. About 12% of the animals are taken by the<br />
+            shelter staff. Taking care of the animals, they become attached<br />
+            to the pets and would hardly ever leave them alone.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="pets">
+      <div class="pet_content">
+        <p class="pet_content_text">
+          Our friends who<br />
+          are looking for a house
+        </p>
+        <div class="pet_slider">
+          <div class="pets__slider__button-left">
+            <button class="left-button">
+              <img src="./images/Arrow_left.png" alt="" />
+            </button>
+          </div>
+
+          <div class="pet_card_container">
+            <div class="pet_card" style="display: block">
+              <img src="./images/pets-card1.png" alt="card1cat" />
+              <p class="pets_card1_img">Katrine</p>
+              <a class="pets_card_a" href="#">Learn more</a>
+            </div>
+
+            <div class="pet_card" style="display: block">
+              <img src="./images/pets-card2.png" alt="card2dog" />
+              <p class="pets_card1_img">Jennifer</p>
+              <button class="pets_card_a" id="open_modal_Jennifer">
+                Learn more
+              </button>
+            </div>
+
+            <div class="pet_card" style="display: block">
+              <img src="./images/pets-card3.png" alt="card3dog" />
+              <p class="pets_card1_img">Woody</p>
+              <a class="pets_card_a" href="#">Learn more</a>
+            </div>
+
+            <div class="pet_card">
+              <img src="./images/pets-card4.png" alt="card3dog" />
+              <p class="pets_card1_img">Sophia</p>
+              <a class="pets_card_a" href="#">Learn more</a>
+            </div>
+
+            <div class="pet_card">
+              <img src="./images/pets-card5.png" alt="card3dog" />
+              <p class="pets_card1_img">Timmy</p>
+              <a class="pets_card_a" href="#">Learn more</a>
+            </div>
+
+            <div class="pet_card">
+              <img src="./images/pets-card6.png" alt="card3dog" />
+              <p class="pets_card1_img">Charly</p>
+              <a class="pets_card_a" href="#">Learn more</a>
+            </div>
+
+            <div class="pet_card">
+              <img src="./images/pets-card7.png" alt="card3dog" />
+              <p class="pets_card1_img">Scarlett</p>
+              <a class="pets_card_a" href="#">Learn more</a>
+            </div>
+
+            <div class="pet_card">
+              <img src="./images/pets-card8.png" alt="card3dog" />
+              <p class="pets_card1_img">Frediie</p>
+              <a class="pets_card_a" href="#">Learn more</a>
+            </div>
+          </div>
+
+          <div class="pets__slider__button-right">
+            <button class="right-button">
+              <img src="./images/Arrow_right.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="popup">
+          <div class="popup__container">
+            <div class="popup__container__img">
+              <img
+                class="popup-img"
+                src="./images/pets-jennifer.png"
+                alt="pets-katrine"
+              />
+            </div>
+            <div class="popup__container__text">
+              <button class="close__popup">&times;</button>
+              <h2 class="popup__container__text__name">Jennifer</h2>
+              <h3 class="popup__container__text__type-breed">Dog - Labrador</h3>
+              <p class="popup__container__text__description">
+                Jennifer is a sweet 2 months old Labrador that is patiently
+                waiting to find a new forever home. This girl really enjoys
+                being able to go outside to run and play, but won't hesitate to
+                play up a storm in the house if she has all of her favorite
+                toys.
+              </p>
+              <ul class="popup__container__text__ul">
+                <li>
+                  <span class="popup__span-bold">Age:</span>
+                  <span class="popup__pet-age char">2 months</span>
+                </li>
+                <li>
+                  <span class="popup__span-bold">Inoculations:</span>
+                  <span class="popup__pet-inoculations char">none</span>
+                </li>
+                <li>
+                  <span class="popup__span-bold">Diseases:</span>
+                  <span class="popup__pet-diseases char">none</span>
+                </li>
+                <li>
+                  <span class="popup__span-bold">Parasites:</span>
+                  <span class="popup__pet-parasites char">none</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <a class="pets_button" href="#">
+          <p class="pets_button_1">Get to know the rest</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="help">
+      <div class="help_content">
+        <h3 class="help_h3">
+          How you can help<br />
+          our shelter
+        </h3>
+        <div class="help_list">
+          <div class="help_card">
+            <img src="./images/icon-1.png" alt="card1" />
+            <p class="help_p">Pet food</p>
+          </div>
+          <div class="help_card">
+            <img src="./images/icon-2.png" alt="card2" />
+            <p class="help_p">Transportation</p>
+          </div>
+          <div class="help_card">
+            <img src="./images/icon-3.png" alt="card3" />
+            <p class="help_p">Toys</p>
+          </div>
+          <div class="help_card">
+            <img src="./images/icon-4.png" alt="card4" />
+            <p class="help_p">Bowls and cups</p>
+          </div>
+          <div class="help_card">
+            <img src="./images/icon-5.png" alt="card5" />
+            <p class="help_p">Shampoos</p>
+          </div>
+          <div class="help_card">
+            <img src="./images/icon-6.png" alt="card6" />
+            <p class="help_p">Vitamins</p>
+          </div>
+          <div class="help_card">
+            <img src="./images/icon-7.png" alt="card7" />
+            <p class="help_p">Medicines</p>
+          </div>
+          <div class="help_card">
+            <img src="./images/icon-8.png" alt="card8" />
+            <p class="help_p">Collars / leashes</p>
+          </div>
+          <div class="help_card">
+            <img src="./images/icon-9.png" alt="card9" />
+            <p class="help_p">Sleeping areas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Donation">
+      <div class="Donation_container">
+        <img
+          src="./images/donation-dog.png"
+          alt="Donation_dog"
+          width="505px"
+          height="261px"
+        />
+        <div class="donation_text">
+          <h3>
+            You can also<br />
+            make a donation
+          </h3>
+          <h5>Name of the bank / Type of bank account</h5>
+          <div class="bank_number">
+            <img
+              src="./images/credit-card.png"
+              alt="credit_card"
+              width="30px"
+              height="23px"
+            />
+            <a class="number" href="#">4400430114680983</a>
+          </div>
+          <p class="bank_text">
+            Legal information and lorem ipsum dolor sit amet, consectetur<br />
+            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+            ac<br />
+            diam. Praesent ultrices maximus tortor et vulputate. Interdum et<br />
+            malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_container">
+        <div class="footer_contacts">
+          <p class="footer_contacts_text">
+            For questions<br />
+            and suggestions
+          </p>
+          <div class="content_email">
+            <img src="./images/icon-email.png" alt="email" />
+            <a class="footer_contacts_email" href="#"
+              >shyngyserzhan200505@gmail.com</a
+            >
+          </div>
+          <div class="contact_number">
+            <img src="./images/icon-phone.png" alt="phone" />
+            <a class="footer_contact_number" href="#">+77088488590</a>
+          </div>
+        </div>
+        <div class="footer_location">
+          <p class="footer_location_text">
+            We are waiting<br />
+            for your visit
+          </p>
+          <div class="location1">
+            <img src="./images/pin.png" alt="pin" />
+            <a class="footer_location1" href="#">Улица Толе би 109Б</a>
+          </div>
+          <div class="location2">
+            <img src="./images/pin.png" alt="pin" />
+            <a class="footer_location2" href="#">Проспект Райымбека 590/6 к2</a>
+          </div>
+        </div>
+        <img src="./images/footer_dog.png" alt="dog" />
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
