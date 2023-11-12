@@ -1,13 +1,11 @@
 .footer {
-  width: 1280px;
-  background-image: url(../images/footer_background.png);
+  width: 1240px;
+  background-image: url("../images/footer_background.png");
 }
 .footer_container {
   width: 1200px;
-  padding-left: 40px;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
 }
 .footer_contacts {
   padding-top: 16px;

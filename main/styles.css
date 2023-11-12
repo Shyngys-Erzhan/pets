@@ -1,0 +1,9 @@
+@import "../CSS/about.css";
+@import "../CSS/donation.css";
+@import "../CSS/footer.css";
+@import "../CSS/help.css";
+@import "../CSS/pets.css";
+@import "../CSS/startscreen.css";
+html {
+  scroll-behavior: smooth;
+}

@@ -1,4 +1,5 @@
 
+
 let currentIndex = 0
 const LeftButton = document.querySelector(".left-button");
 const cards = document.querySelectorAll(".pet_card");
@@ -36,6 +37,10 @@ LeftButton.addEventListener("click", showPrevious);
 RightButton.addEventListener("click", showNext);
 
 showCards();
+
+
+
+
 
 
 

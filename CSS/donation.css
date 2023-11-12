@@ -1,6 +1,6 @@
 .Donation {
   display: flex;
-  width: 1280px;
+  width: 1240px;
   background: var(--color-light-l, #f6f6f6);
 }
 .Donation_container {

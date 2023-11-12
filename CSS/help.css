@@ -2,12 +2,14 @@
   width: 1280px;
 }
 .help_content {
-  width: 1200px;
-  padding-left: 40px;
-  padding-top: 80px;
+  width: 1240px;
+  padding-top: 20px;
   padding-bottom: 80px;
+  background-color:#fff;
 }
 .help_h3 {
+  display: flex;
+  justify-content: center;
   font-family: Georgia;
   font-size: 35px;
   font-weight: 400;
