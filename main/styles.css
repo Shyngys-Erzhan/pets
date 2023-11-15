@@ -4,6 +4,8 @@
 @import "../CSS/help.css";
 @import "../CSS/pets.css";
 @import "../CSS/startscreen.css";
+@import "../CSS/modal_window.css";
+@import "../CSS/necolas.github.io_normalize.css_8.0.1_normalize.css";
 html {
   scroll-behavior: smooth;
 }

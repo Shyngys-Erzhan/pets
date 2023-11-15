@@ -1,9 +1,10 @@
 .footer {
-  width: 1240px;
+  width: 1280px;
   background-image: url("../images/footer_background.png");
 }
 .footer_container {
   width: 1200px;
+  padding-left: 25px;
   display: flex;
   justify-content: space-between;
 }

@@ -1,45 +1,198 @@
+import json from './pets.json' assert { type: 'json' };
 
 
-let currentIndex = 0
-const LeftButton = document.querySelector(".left-button");
-const cards = document.querySelectorAll(".pet_card");
-const RightButton = document.querySelector(".right-button");
+const arrowLeft = document.querySelector('.left-button');
+const arrowRight = document.querySelector('.right-button');
+const imgPetOne = document.querySelector('.pets-katrine');
+const namePetOne = document.querySelector('.name-Katrine')
+const imgPetTwo = document.querySelector('.pets-jennifer');
+const namePetTwo = document.querySelector('.name-Jennifer');
+const imgPetThree = document.querySelector('.pets-woody');
+const namePetThree = document.querySelector('.name-Woody');
 
-function showCards() {
-  for (let i = 0; i < cards.length; i++) {
-    if (i >= currentIndex && i < currentIndex + 3) {
-      cards[i].style.display = "block";
-    } else {
-      cards[i].style.display = "none";
-    }
-  }
-}
 
-function showNext() {
-  if (currentIndex + 3 < cards.length) {
-    currentIndex = currentIndex + 1;
+let firstCard,
+  secondCard,
+  thirdCard;
+
+
+let arr = [0, 1, 2, 3, 4, 5, 6, 7];
+
+
+firstCard = arr[Math.floor(Math.random() * arr.length)];
+
+
+arr = arr.filter((n) => { return n != firstCard });
+secondCard = arr[Math.floor(Math.random() * arr.length)];
+
+
+arr = arr.filter((m) => { return m != secondCard });
+thirdCard = arr[Math.floor(Math.random() * arr.length)];
+
+
+imgPetOne.src = json[firstCard].img;
+namePetOne.textContent = json[firstCard].name;
+
+imgPetTwo.src = json[secondCard].img;
+namePetTwo.textContent = json[secondCard].name;
+
+imgPetThree.src = json[thirdCard].img;
+namePetThree.textContent = json[thirdCard].name;
+
+
+function slideRight() {
+
+  if (firstCard === 7) {
+    firstCard = 0;
   } else {
-    currentIndex = 0;
+    firstCard += 1;
   }
-  showCards();
-}
 
-function showPrevious() {
-  if (currentIndex > 0) {
-    currentIndex = currentIndex - 1;
+  if (secondCard === 7) {
+    secondCard = 0;
   } else {
-    currentIndex = cards.length - 3;
+    secondCard += 1;
   }
-  showCards();
+
+  if (thirdCard === 7) {
+    thirdCard = 0;
+  } else {
+    thirdCard += 1;
+  }
+
+  changeCard();
+} slideRight();
+
+function slideLeft() {
+
+  if (firstCard === 7) {
+    firstCard = 0;
+  } else {
+    firstCard += 1;
+  }
+
+  if (secondCard === 7) {
+    secondCard = 0;
+  } else {
+    secondCard += 1;
+  }
+
+  if (thirdCard === 7) {
+    thirdCard = 0;
+  } else {
+    thirdCard += 1;
+  }
+
+  changeCard();
+} slideRight();
+
+
+
+function changeCard() {
+  imgPetOne.src = json[firstCard].img;
+  namePetOne.textContent = json[firstCard].name;
+
+  imgPetTwo.src = json[secondCard].img;
+  namePetTwo.textContent = json[secondCard].name;
+
+  imgPetThree.src = json[thirdCard].img;
+  namePetThree.textContent = json[thirdCard].name;
+
 }
 
-LeftButton.addEventListener("click", showPrevious);
-RightButton.addEventListener("click", showNext);
 
-showCards();
-
+arrowRight.addEventListener('click', slideRight);
+arrowLeft.addEventListener('click', slideLeft);
 
 
+
+let popup = document.querySelector('.popup');
+let popupContainer = document.querySelector('.popup__container');
+
+let openFirstPopup = document.querySelector('.katrine');
+let openSecondPopup = document.querySelector('.jennifer');
+let openThirdPopup = document.querySelector('.woody');
+
+let closePopup = document.querySelector('.close__popup');
+
+let popupImg = document.querySelector('.popup-img');
+let popupPetName = document.querySelector('.popup__container__text__name');
+let popupPetTypeBreed = document.querySelector('.popup__container__text__type-breed');
+let popupPetDescription = document.querySelector('.popup__container__text__description');
+let popupAge = document.querySelector('.popup__pet-age');
+let popupInoculations = document.querySelector('.popup__pet-inoculations');
+let popupDiseases = document.querySelector('.popup__pet-diseases');
+let popupParasites = document.querySelector('.popup__pet-parasites');
+
+
+closePopup.addEventListener('click', () => {
+  popup.classList.remove('active');
+  popupContainer.classList.remove('active');
+})
+
+document.addEventListener('click', (e) => {
+  if (e.target === popup) {
+    popup.classList.remove('active');
+    popupContainer.classList.remove('active');
+  }
+})
+
+
+openFirstPopup.addEventListener('click', (e) => {
+  e.preventDefault();
+  popup.classList.add('active');
+  popupContainer.classList.add('active');
+  popupFirstCard();
+})
+
+openSecondPopup.addEventListener('click', (e) => {
+  e.preventDefault();
+  popup.classList.add('active');
+  popupContainer.classList.add('active');
+  popupSecondCard();
+})
+
+
+openThirdPopup.addEventListener('click', (e) => {
+  e.preventDefault();
+  popup.classList.add('active');
+  popupContainer.classList.add('active');
+  popupThirdCard();
+})
+
+function popupFirstCard() {
+  popupImg.src = json[firstCard].img;
+  popupPetName.textContent = json[firstCard].name;
+  popupPetTypeBreed.textContent = `${json[firstCard].type} - ${json[firstCard].breed}`;
+  popupPetDescription.textContent = json[firstCard].description;
+  popupAge.textContent = json[firstCard].age;
+  popupInoculations.textContent = json[firstCard].inoculations;
+  popupDiseases.textContent = json[firstCard].diseases;
+  popupParasites.textContent = json[firstCard].parasites;
+}
+
+function popupSecondCard() {
+  popupImg.src = json[secondCard].img;
+  popupPetName.textContent = json[secondCard].name;
+  popupPetTypeBreed.textContent = `${json[secondCard].type} - ${json[secondCard].breed}`;
+  popupPetDescription.textContent = json[secondCard].description;
+  popupAge.textContent = json[secondCard].age;
+  popupInoculations.textContent = json[secondCard].inoculations;
+  popupDiseases.textContent = json[secondCard].diseases;
+  popupParasites.textContent = json[secondCard].parasites;
+}
+
+function popupThirdCard() {
+  popupImg.src = json[thirdCard].img;
+  popupPetName.textContent = json[thirdCard].name;
+  popupPetTypeBreed.textContent = `${json[thirdCard].type} - ${json[thirdCard].breed}`;
+  popupPetDescription.textContent = json[thirdCard].description;
+  popupAge.textContent = json[thirdCard].age;
+  popupInoculations.textContent = json[thirdCard].inoculations;
+  popupDiseases.textContent = json[thirdCard].diseases;
+  popupParasites.textContent = json[thirdCard].parasites;
+}
+console.log(123);
 
 
 
